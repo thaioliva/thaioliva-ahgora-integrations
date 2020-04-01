@@ -32,8 +32,8 @@ module.exports = smp.wrap({
         }
       ]
     }, {
-      test: /\.(scss|css)$/,
-      use: ['thread-loader', 'cache-loader', 'style-loader', 'css-loader', 'sass-loader']
+      test: /\.s[ac]ss$/i,
+      use: ['style-loader', 'css-loader', 'sass-loader']
     }, {
       loader: require.resolve('file-loader'),
       exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.(css|scss)$/, /\.json$/]
@@ -57,7 +57,8 @@ module.exports = smp.wrap({
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
-      template: './public/index.html'
+      template: './public/index.html',
+      hash: false
     }),
     new webpack.DefinePlugin({
       'HOMEPAGE': JSON.stringify('/'),

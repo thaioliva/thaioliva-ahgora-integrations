@@ -7,5 +7,5 @@ import Settings from '../containers/Settings/reducer';
 export default combineReducers({
   app: AppWrapper,
   Dashboard: Dashboard,
-  Settings: Settings,
+  Settings: Settings
 });

@@ -43,44 +43,7 @@ export class Form extends React.Component {
 
     return (
       <React.Fragment>
-        <Form onSubmit={this.save.bind(this)}>
-          <Grid>
-            <Grid.Col>
-              <label className="dropdown-label">Lines</label>
-              <Dropdown isField trigger={<React.Fragment><span>{this.state.lineSelected}</span> <Icon name="angle-down" /></React.Fragment>}>
-                {dataDropdownLines}
-              </Dropdown>
-            </Grid.Col>
-            <Grid.Col>
-              <label className="dropdown-label">Goal Period</label>
-              <Dropdown isField trigger={<React.Fragment><span>{this.state.goalSelected}</span> <Icon name="angle-down" /></React.Fragment>}>
-                {dataDropdownGoalPeriod}
-              </Dropdown>
-            </Grid.Col>
-            <Grid.Col>
-              <Field label="Goal (Integer only)">
-                <Input placeholder="--" onChange={this.handleChange.bind(this, 'value')} />
-              </Field>
-            </Grid.Col>
-            <Grid.Col className="has-content-size align-bottom">
-              <Button className="is-square" onClick={this.save.bind(this)}>Update Goal</Button>
-            </Grid.Col>
-          </Grid>
-        </Form>
-        <Grid>
-          <Grid.Col>
-            <span className="title is-6 is-dark">{this.state.message}</span>
-          </Grid.Col>
-        </Grid>
-        <Grid>
-          <Grid.Col>
-            <div className="v-space-small" />
-            <h3 className="title is-6 is-uppercase">
-              Goals
-            </h3>
-            <hr className="hr is-small"/>
-          </Grid.Col>
-        </Grid>
+        teste
 
       </React.Fragment>
     );

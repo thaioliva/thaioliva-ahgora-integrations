@@ -3,7 +3,6 @@ import thunk from 'redux-thunk';
 import reducers from './reducers';
 
 const middleware = applyMiddleware(thunk);
-console.log('Ahdddddoy!');
 
 const store = createStore(reducers, middleware);
 

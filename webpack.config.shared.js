@@ -138,7 +138,6 @@ module.exports = (baseHref, baseApiUrl) => smp.wrap({
         if (message.indexOf('Skipping static resource') === 0) {
           return;
         }
-        console.log(message);
       },
       minify: true,
       navigateFallback: './public/index.html',
@@ -154,7 +153,7 @@ module.exports = (baseHref, baseApiUrl) => smp.wrap({
       'HOMEPAGE': JSON.stringify(baseHref),
       'BASE_API_URL': JSON.stringify(baseApiUrl)
     }),
-    
+
     new ManifestPlugin({ fileName: 'asset-manifest.json' })
   ]
 });

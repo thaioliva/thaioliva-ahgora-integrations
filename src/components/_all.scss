@@ -6,7 +6,7 @@
 @import "~static/fontawesome/scss/fontawesome";
 
 // Settings
-@import "./settings/all";
+// @import "./settings/_all";
 
 @import "~react-vis/dist/main";
 // @import "~react-vis/dist/styles/style";
@@ -35,7 +35,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: -1px;
-  padding: 1.4rem .5rem;
+  padding: 1.4rem 0.5rem;
   vertical-align: top;
   position: relative;
   text-transform: uppercase;
@@ -62,7 +62,6 @@
   bottom: -1px;
   left: 0;
 }
-
 
 .app-footer {
   display: flex;
@@ -96,14 +95,14 @@
 }
 
 .view-selector button {
-  background-color: #FFF;
-  border: solid 1px #CCC;
+  background-color: #fff;
+  border: solid 1px #ccc;
 }
 
 .title.is-large.is-margin-left-auto {
   margin-left: auto !important;
   font-size: 45px;
-  text-transform: 'lowercase';
+  text-transform: "lowercase";
 }
 
 .title.is-large.is-margin-left-auto.is-brand {
@@ -118,16 +117,16 @@
   border: 3px solid #c93434;
 }
 
-  .value-info {
-    .value-info-label {
-      font-size: 110px;
-      font-weight: 600;
-    }
-    .value-info-symbol {
-      font-size: 70px;
-      font-weight: 600;
-    }
+.value-info {
+  .value-info-label {
+    font-size: 110px;
+    font-weight: 600;
   }
+  .value-info-symbol {
+    font-size: 70px;
+    font-weight: 600;
+  }
+}
 
 .title.is-label.is-large.is-hour {
   font-size: 30px;
@@ -150,10 +149,10 @@
     border-color: #e8362e;
   }
   &.line-status-1 {
-    border-color: #34C888;
+    border-color: #34c888;
   }
   &.line-status-2 {
-    border-color: #399FEF;
+    border-color: #399fef;
   }
 }
 th {
@@ -167,18 +166,17 @@ th {
   position: absolute;
   top: 14px;
   left: -5px;
-  opacity: .6;
+  opacity: 0.6;
   &:hover {
     opacity: 1;
   }
 }
 
 .datatable-col {
-  padding: 1.4rem 1rem 1.3rem .5rem;
+  padding: 1.4rem 1rem 1.3rem 0.5rem;
 }
 
 .timeline-tooltip {
-
   font-size: 14px !important;
   line-height: 1 !important;
   color: #4a4a4a !important;
@@ -187,7 +185,7 @@ th {
   // max-width: 90px;
 
   padding: 1.5rem 2rem !important;
-  box-shadow: 0 0 4px rgba(0, 0, 0, .2) !important;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2) !important;
   background-color: white !important;
 
   &.place-top {
@@ -198,7 +196,8 @@ th {
     }
   }
   &.place-right {
-    &:after, &:before {
+    &:after,
+    &:before {
       border-right-color: white !important;
       border-right-style: solid !important;
       border-right-width: 6px !important;
@@ -222,7 +221,7 @@ th {
 .chart-tooltip-item {
   .subtitle-shift {
     font-size: 13px;
-    color: #9198A4;
+    color: #9198a4;
     font-weight: lighter;
   }
 }

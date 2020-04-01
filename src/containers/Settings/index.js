@@ -30,8 +30,7 @@ export class Settings extends React.Component {
   }
 
   render() {
-
-    const params = RouterUtils.params;
+    // const params = RouterUtils.params;
     return (
       <React.Fragment>
 
@@ -43,7 +42,7 @@ export class Settings extends React.Component {
             <Form />
           </Grid.Col>
         </Grid>
-        
+
 
       </React.Fragment>
     );
@@ -57,5 +56,5 @@ Settings.propTypes = {};
 Settings.defaultProps = {};
 
 export default connect((store) => ({
-  targets: store.app.targets
+  settings: store.app.settings
 }), actions)(Settings);
