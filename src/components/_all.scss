@@ -1,0 +1,232 @@
+// Normalize.css
+@import "~normalize.css/normalize.css";
+
+// Fontawesome
+@import "~static/fontawesome/scss/fa-solid";
+@import "~static/fontawesome/scss/fontawesome";
+
+// Settings
+@import "./settings/all";
+
+@import "~react-vis/dist/main";
+// @import "~react-vis/dist/styles/style";
+
+// /react-vis/dist/style.css
+
+// Custom components
+@import "./styles/all";
+
+.loading-container {
+  width: 100%;
+}
+
+.tabs li {
+  margin: 0 1.2rem;
+}
+.tabs button {
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #dbdbdb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #9198a4;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: -1px;
+  padding: 1.4rem .5rem;
+  vertical-align: top;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.tabs li.is-active button {
+  border-bottom-color: #3273dc;
+  color: #3273dc;
+}
+
+.tabs li.is-active button:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #399fef;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+
+.app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10px 10px;
+  margin-bottom: -10px;
+}
+
+.app-footer-logo {
+  svg {
+    width: 80px;
+  }
+}
+
+.app-footer-credits {
+  font-size: 12px;
+  color: #999;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.view-selector {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: solid 1px #dbdbdb;
+  .button-label {
+    margin-right: 15px;
+  }
+}
+
+.view-selector button {
+  background-color: #FFF;
+  border: solid 1px #CCC;
+}
+
+.title.is-large.is-margin-left-auto {
+  margin-left: auto !important;
+  font-size: 45px;
+  text-transform: 'lowercase';
+}
+
+.title.is-large.is-margin-left-auto.is-brand {
+  color: #363636;
+}
+
+.progress.is-large {
+  border: 3px solid #209cee;
+  height: 2rem;
+}
+.progress.is-large.is-danger {
+  border: 3px solid #c93434;
+}
+
+  .value-info {
+    .value-info-label {
+      font-size: 110px;
+      font-weight: 600;
+    }
+    .value-info-symbol {
+      font-size: 70px;
+      font-weight: 600;
+    }
+  }
+
+.title.is-label.is-large.is-hour {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.title.is-label.is-large.is-overview {
+  font-size: 20px;
+}
+
+.logo-bottom {
+  float: right;
+}
+
+.line-health {
+  border-style: solid;
+  border-width: 15px;
+
+  &.line-status-0 {
+    border-color: #e8362e;
+  }
+  &.line-status-1 {
+    border-color: #34C888;
+  }
+  &.line-status-2 {
+    border-color: #399FEF;
+  }
+}
+th {
+  position: relative;
+}
+
+.order-icon {
+  &:focus {
+    outline: none;
+  }
+  position: absolute;
+  top: 14px;
+  left: -5px;
+  opacity: .6;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.datatable-col {
+  padding: 1.4rem 1rem 1.3rem .5rem;
+}
+
+.timeline-tooltip {
+
+  font-size: 14px !important;
+  line-height: 1 !important;
+  color: #4a4a4a !important;
+  font-weight: 800 !important;
+  // margin: 0 auto 10px auto;
+  // max-width: 90px;
+
+  padding: 1.5rem 2rem !important;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .2) !important;
+  background-color: white !important;
+
+  &.place-top {
+    &:after {
+      border-top-color: white !important;
+      border-top-style: solid !important;
+      border-top-width: 6px !important;
+    }
+  }
+  &.place-right {
+    &:after, &:before {
+      border-right-color: white !important;
+      border-right-style: solid !important;
+      border-right-width: 6px !important;
+    }
+  }
+  &.place-left {
+    &:after {
+      border-left-color: white !important;
+      border-left-style: solid !important;
+      border-left-width: 6px !important;
+    }
+  }
+}
+
+.circle-chart.oeeGraph {
+  path.recharts-sector {
+    stroke: transparent;
+  }
+}
+
+.chart-tooltip-item {
+  .subtitle-shift {
+    font-size: 13px;
+    color: #9198A4;
+    font-weight: lighter;
+  }
+}
+
+.header-logo {
+  cursor: pointer;
+}

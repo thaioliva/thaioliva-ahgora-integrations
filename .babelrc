@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "es2015",
+    "react"
+  ],
+  "plugins": [
+    [
+      "react-hot-loader/babel",
+      "module-resolver",
+      {
+        "alias": {
+          "core": "./src/core",
+          "static": "./public",
+          "components": "./src/components",
+          "lib": "./src/lib",
+          "containers": "./src/containers",
+          "utils": "./src/utils",
+          "services": "./src/services"
+        }
+      }
+    ]
+  ]
+}
